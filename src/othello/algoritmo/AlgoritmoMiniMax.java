@@ -58,10 +58,15 @@ public class AlgoritmoMiniMax extends Algoritmo{
      */
     public int miniMax(Tablero tablero, int prof, int jugadorActual)
     {        
+        int fila,col;
+        Casilla cas;
+        
+        ArrayList<Casilla> movimientos = new ArrayList<>();
+        movimientos=tablero.generarMovimiento(jugadorActual);
         //
         int movimiento = 1;
 		// ...
-
+        
         // Devolver el valor para el mejor movimiento
         return movimiento;
         
